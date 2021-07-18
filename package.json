@@ -1,19 +1,22 @@
 {
   "name": "reack",
   "version": "1.0.0",
-  "description": "Reack + webpack + ApiRest + Sass",
-  "main": "index.js",
+  "description": "APP para consumir la APPI de Rick-And-Morty",
+  "main": "webpack.config.js",
   "scripts": {
     "dev": "webpack serve --mode development --open chrome --devtool eval-cheap-module-source-map",
     "build": "webpack"
   },
-  "author": "Juan Calderon P4scalB",
-  "license": "MIT",
-  "dependencies": {
-    "core-js": "^3.15.2",
-    "react": "^17.0.2",
-    "react-doom": "^1.0.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P4scalB/Api-rick-y-morty.git"
   },
+  "author": "Juan Calderon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/P4scalB/Api-rick-y-morty/issues"
+  },
+  "homepage": "https://github.com/P4scalB/Api-rick-y-morty#readme",
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
@@ -31,7 +34,12 @@
     "toml": "^3.0.0",
     "webpack": "^5.45.1",
     "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
     "xml-loader": "^1.2.1",
     "yamljs": "^0.3.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }

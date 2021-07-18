@@ -7,7 +7,7 @@ const yaml = require('yamljs')
 
 
 module.exports = {
-    entry: '/src/index.js',
+    entry: './src/index.js',
     output: {
         filename: 'js/bundle.[contenthash].js',
         path: path.resolve(__dirname, 'dist'),
@@ -95,7 +95,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: '/public/index.html',
+            template: './public/index.html',
         })
     ]
 }
